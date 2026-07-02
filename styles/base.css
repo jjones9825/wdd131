@@ -1,12 +1,17 @@
-header, footer {
+header {
     font-family: "Pacifico", cursive;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: #161638;
+    font-size: larger;
     color: white;
 
 }
 
 footer {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    background-color: #161638;
+    color: white;
     padding: 30px;
 }
 
@@ -39,6 +44,7 @@ section {
     font-family: "Sansita", sans-serif;
     border: solid 1px black;
     border-radius: 10px;
+    padding: 2rem;
     overflow: hidden;
 }
 
@@ -49,16 +55,23 @@ section img {
     border: 1px solid white;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    float: right;
+    /* float: right; */
     margin: 0 0 1rem 1rem;
 }
 
-figure {
+.profile {
+    float: right;
+}
+section p {
+    padding: .5rem;
+}
+
+.flag {
     float: left;
 }
 
 h2 {
-    background-color: cornflowerblue;
+    background-color: #161638;
     color: white;
     margin: 0;
     padding: 15px;
@@ -68,6 +81,7 @@ h2 {
 .card {
     padding: 20px;
 }
+
 
 .about {
     grid-column: 1 / 2;
@@ -102,7 +116,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-    background-color: slategrey;
+    background-color: #38667E;
     
 }
 
@@ -115,6 +129,5 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: aquamarine;
+    text-decoration: overline;
 }
