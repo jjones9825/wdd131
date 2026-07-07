@@ -8,63 +8,74 @@
     
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
     <script src="scripts/temples.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     
-    <title>Temple Album</title>
+    <title>Temple Album | WDD 131</title>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul> 
         </nav>
     </header>
     <main>
-        <h1></h1>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/albuquerque-temple.jpg" alt="The Albuquerque New Mexico temple at night, front view.">
-            <figcaption>Albuquerque New Mexico Temple</figcaption>
-        </figure>
+        <h1>Home</h1>
+        <div class="container standard">
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple.jpg" loading="lazy" width="250" height="167" alt="The Albuquerque New Mexico temple at night, front view.">
+                <figcaption>Albuquerque New Mexico Temple</figcaption>
+            </figure>
+        </div>
+        
     </main>
     <footer>
          <p>©<span id="currentyear"></span> 🌵 Julie Renee Jones 🌵 Arizona</p>
