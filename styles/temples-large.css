@@ -8,11 +8,11 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         flex-direction: row;
     }
 
-    .navigation a {
+    nav a {
         display: block;
         flex: 1 1 100%;
     }

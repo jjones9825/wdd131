@@ -12,17 +12,16 @@ header {
     background-color: #785b8b;
     font-size: 20px;
     color: white;
+}
 
+header p {
+    padding: 16px;
 }
 
 h1 {
     text-align: center;
     font-size: 1.5rem;
     margin-left: 1rem;
-}
-
-nav {
-    margin: 1rem auto;
 }
 
 
@@ -84,7 +83,7 @@ footer {
     content: "X";
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -93,7 +92,7 @@ footer {
     color: #fff;
 }
 
-.navigation a {
+nav a {
     display: none;
     padding: 1rem;
     text-align: center;
@@ -101,7 +100,7 @@ footer {
     color: #fff;
 }
 
-.navigation a:hover {
+nav a:hover {
     text-decoration: overline;
     font-weight: 700; 
 }
