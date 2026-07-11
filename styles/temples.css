@@ -7,8 +7,11 @@
 
 /* General Layouts */
 header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
     font-family: "Pacifico", cursive;
-    text-align: center;
+    text-align: left;
     background-color: #785b8b;
     font-size: 20px;
     color: white;
@@ -26,12 +29,25 @@ h1 {
 
 
 main {
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 h1, h2, h3 {
     font-family: "Pacifico", cursive;
+}
+
+figure {
+    width: 100%;
+    text-align: center;
+}
+
+figure img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    display: block;
 }
 
 figcaption {
@@ -51,8 +67,8 @@ footer {
 .container {
     display: grid;
     /* grid-template: auto 1fr auto / 3fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
     place-items: center;
 }
 
@@ -69,7 +85,7 @@ footer {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -84,16 +100,19 @@ footer {
 }
 
 nav {
-    display: flex;
+    width: 100%;
+}
+
+nav ul {
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    background-color: #38667E;
     color: #fff;
 }
 
 nav a {
-    display: none;
+    display: block;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -105,8 +124,8 @@ nav a:hover {
     font-weight: 700; 
 }
 
-.open a {
-    display: block;
+nav.open ul {
+    display: flex;
 }
 
 .active::before {
