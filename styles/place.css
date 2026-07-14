@@ -1,0 +1,132 @@
+:root {
+    --fonts: "Sansita", sans-serif;
+    --bord: 1px solid #000;
+    --red: #BF0A30;
+    --blue: #002868;
+    --yellow: #FED700;
+    --copper: #CE5C17; 
+    --text: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonts);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: var(--text);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: var(--text);
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    margin: 0 1rem;
+    border: var(--bord);
+    padding: 1rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .5rem;
+}
+
+.data, .weather {
+    position: static;
+}
+
+.weather-icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+}
+
+@media (min-width: 640px){
+    .container {
+        position: relative;
+        grid-column: 1/4;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 250px 1fr 250px;
+        grid-template-areas: "hero hero hero";
+    }
+
+    h2 {
+        text-align: left;
+        padding: 1rem;
+        margin-left: -2rem;
+        margin-right: 3.75rem;
+        background-color: var(--copper);
+        color: var(--text)
+
+    }
+
+    .container img {
+        width: 100%;
+        display: block;
+    }
+
+    .data {
+        position: absolute;
+
+        top: .5rem;
+        left: 2rem;
+
+        width: 260px;
+
+        background: white;
+        opacity: 85%;
+    }
+
+    .weather{
+        position: absolute;
+
+        bottom:5rem;
+        right: 2rem;
+
+        width: 220px;
+        background: white;
+        opacity: 85%;
+    }
+
+    img.weather-icon {
+        display: none;
+    }
+    .weather h2::after {
+        content:"⛅️";
+        font-size: 1.5rem;
+
+    }
+
+  
+}
