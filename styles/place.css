@@ -1,6 +1,6 @@
 :root {
     --fonts: "Sansita", sans-serif;
-    --bord: 1px solid #000;
+    --bord: 1px solid var(--red);
     --red: #BF0A30;
     --blue: #002868;
     --yellow: #FED700;
@@ -48,16 +48,31 @@ h2 {
 }
 
 .card {
-    margin: 0 1rem;
+    
     border: var(--bord);
     padding: 1rem;
 }
 
 .info {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: .5rem;
+    /* display: grid;
+    grid-template-columns: max-content max-content;
+    /* justify-content: center;
+    column-gap: .75rem; */
+    /* gap: .5rem; */
+    text-align: center;
 }
+
+ .info p {
+    margin: .5rem 0;
+}
+/*
+.info p:nth-child(odd) {
+    text-align: right;
+}
+
+.info p:nth-child(even) {
+    text-align: left;
+} */
 
 .data, .weather {
     position: static;
@@ -65,8 +80,8 @@ h2 {
 
 .weather-icon {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 1rem;
 }
 
@@ -114,7 +129,7 @@ h2 {
         bottom:5rem;
         right: 2rem;
 
-        width: 220px;
+        width: 260px;
         background: white;
         opacity: 85%;
     }
