@@ -1,0 +1,133 @@
+/* Universal Format */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Layouts */
+header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Pacifico", cursive;
+    text-align: left;
+    background-color: #785b8b;
+    font-size: 20px;
+    color: white;
+}
+
+header p {
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: "Pacifico", cursive;
+}
+
+figure {
+    width: 100%;
+    text-align: center;
+}
+
+figure img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+}
+
+footer {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    background-color: #785b8b;
+    color: white;
+    padding: 30px;
+}
+
+/* Class Selectors */
+.container {
+    display: grid;
+    /* grid-template: auto 1fr auto / 3fr 1fr 1fr; */
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    place-items: center;
+}
+
+.standard {
+    font-weight: 700;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+}
+
+
+/* Mobile Menu Hamburger */
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    color: #fff;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    font-weight: 700; 
+}
+
+nav.open ul {
+    display: flex;
+}
+
+.active::before {
+    content: "📍";
+}
