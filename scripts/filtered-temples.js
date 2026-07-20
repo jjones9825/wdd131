@@ -91,3 +91,70 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/portland-oregon-temple/portland-oregon-temple-1629-main.jpg"
   }
 ];
+
+const templeContainer = document.querySelector("#templeCards");
+
+function displayTemples(filteredTemples) {
+  templeContainer.innerHTML= "";
+
+  filteredTemples.forEach(temple => {
+    const card = document.createElement("section");
+
+    const name = document.createElement("h3");
+    const location = document.createElement("p");
+    const dedicated = document.createElement("p");
+    const area = document.createElement("p");
+    const image = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML =  `<strong>Location:</strong> ${temple.location}`;
+    dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+    area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
+
+    image.src = temple.imageUrl;
+    image.alt = temple.templeName;
+    image.loading = "lazy";
+    image.width = 400;
+    image.height = 250;
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(image);
+
+    templeContainer.appendChild(card);
+  });
+}
+
+displayTemples(temples);
+
+document.querySelector("#home").addEventListener("click", (event) => {
+  event.preventDefault();
+  displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", (event) => {
+  event.preventDefault();
+  const oldTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0,4)) < 1900);
+  displayTemples(oldTemples);
+});
+
+document.querySelector("#new").addEventListener("click", (event) => {
+  event.preventDefault();
+  const newTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) > 2000);
+  displayTemples(newTemples);
+});
+
+document.querySelector("#large").addEventListener("click", (event) => {
+  event.preventDefault();
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  displayTemples(largeTemples);
+});
+
+document.querySelector("#small").addEventListener("click", (event) => {
+  event.preventDefault();
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  displayTemples(smallTemples);
+});
+
