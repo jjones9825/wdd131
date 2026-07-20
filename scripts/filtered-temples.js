@@ -93,6 +93,7 @@ const temples = [
 ];
 
 const templeContainer = document.querySelector("#templeCards");
+const pageTitle = document.querySelector("#pageTitle");
 
 function displayTemples(filteredTemples) {
   templeContainer.innerHTML= "";
@@ -131,29 +132,34 @@ displayTemples(temples);
 
 document.querySelector("#home").addEventListener("click", (event) => {
   event.preventDefault();
+  pageTitle.textContent = "Home";
   displayTemples(temples);
 });
 
 document.querySelector("#old").addEventListener("click", (event) => {
   event.preventDefault();
+  pageTitle.textContent = "Old";
   const oldTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0,4)) < 1900);
   displayTemples(oldTemples);
 });
 
 document.querySelector("#new").addEventListener("click", (event) => {
   event.preventDefault();
+  pageTitle.textContent = "New";
   const newTemples = temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) > 2000);
   displayTemples(newTemples);
 });
 
 document.querySelector("#large").addEventListener("click", (event) => {
   event.preventDefault();
+  pageTitle.textContent = "Large";
   const largeTemples = temples.filter(temple => temple.area > 90000);
   displayTemples(largeTemples);
 });
 
 document.querySelector("#small").addEventListener("click", (event) => {
   event.preventDefault();
+  pageTitle.textContent = "Small";
   const smallTemples = temples.filter(temple => temple.area < 10000);
   displayTemples(smallTemples);
 });
