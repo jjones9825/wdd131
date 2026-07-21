@@ -128,7 +128,7 @@ function displayTemples(filteredTemples) {
     dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-    image.src = temple.imageUrl;
+    image.src = temple.imageUrl.replace(".jpg", "-small.webp");
     image.alt = temple.templeName;
     image.loading = "lazy";
     image.decoding = "async";
