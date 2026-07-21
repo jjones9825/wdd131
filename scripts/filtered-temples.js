@@ -136,7 +136,6 @@ function displayTemples(filteredTemples) {
     else {
       image.loading = "lazy";
     }
-    image.decoding = "async";
     image.width = 400;
     image.height = 250;
 
