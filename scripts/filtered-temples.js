@@ -89,6 +89,22 @@ const temples = [
     area: 80500,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/portland-oregon-temple/portland-oregon-temple-1629-main.jpg"
+  },
+  {
+    templeName: "Gilbert Arizona",
+    location: "Gilbert, Arizona, United States",
+    dedicated: "2014, March, 2",
+    area: 85326,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/gilbert-arizona-temple/gilbert-arizona-temple-3802-main.jpg"
+  },
+  {
+    templeName: "Paris France",
+    location: "Le Chesnay, France",
+    dedicated: "2017, May, 21",
+    area: 44175,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
   }
 ];
 

@@ -40,10 +40,9 @@ h1, h2, h3 {
 
 #templeCards img {
     width: 100%;
-    max-width: 400px;
     height: 250px;
     object-fit: cover;
-    margin: 1rem auto 0;
+    margin-top: auto;
     display: block;
 }
 
@@ -61,11 +60,13 @@ footer {
     /* grid-template: auto 1fr auto / 3fr 1fr 1fr; */
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
-    place-items: center;
+    align-items: stretch;
     padding: 1rem;
 }
 
 #templeCards section {
+    display: flex;
+    flex-direction: column;
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     text-align: center;
