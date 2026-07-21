@@ -114,7 +114,7 @@ const pageTitle = document.querySelector("#pageTitle");
 function displayTemples(filteredTemples) {
   templeContainer.innerHTML= "";
 
-  filteredTemples.forEach(temple, index => {
+  filteredTemples.forEach((temple, index) => {
     const card = document.createElement("section");
 
     const name = document.createElement("h3");
