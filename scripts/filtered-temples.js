@@ -114,10 +114,10 @@ const pageTitle = document.querySelector("#pageTitle");
 function displayTemples(filteredTemples) {
   templeContainer.innerHTML= "";
 
-  filteredTemples.forEach(temple => {
+  filteredTemples.forEach((temple, index) => {
     const card = document.createElement("section");
 
-    const name = document.createElement("h3");
+    const name = document.createElement("h2");
     const location = document.createElement("p");
     const dedicated = document.createElement("p");
     const area = document.createElement("p");
@@ -130,7 +130,12 @@ function displayTemples(filteredTemples) {
 
     image.src = temple.imageUrl;
     image.alt = temple.templeName;
-    image.loading = "lazy";
+    if(index === 0){
+      image.loading = "eager";
+    }
+    else{
+      image.loading = "lazy";
+    }
     image.decoding = "async";
     image.width = 400;
     image.height = 250;
